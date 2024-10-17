@@ -1,0 +1,10 @@
+apscheduler
+dnspython
+requests
+pymongo==4.1.1
+Pyrogram
+pytz
+pytz-deprecation-shim==0.1.0.post0
+TgCrypto
+python-dotenv
+pyromod

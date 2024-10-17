@@ -1,0 +1,108 @@
+{
+    "name": "BZ PROMOTE BOT",
+    "description": "mengirim pesan ke channel telegram secara anonymous",
+    "keywords": [
+      "telegram",
+      "menfess",
+      "BZ"
+    ],
+    "repository": "https://github.com/zkllynx/neguchifess",
+    "logo": "https://telegra.ph/file/a24d7daa6a191d6eb7176.jpg",
+    "env": {
+      "BOT_TOKEN": {
+        "description": "Masukkan token bot kamu, didapatkan dari @Botfather",
+        "value": "7375322946:AAHiHYCpUJFxzBqzkHFxBdz8aHAAPtXPFz8"
+      },
+      "API_HASH": {
+        "description": "app hash kamu, didapatkan dari my.telegram.org",
+        "value": "c18d925446d5164ad1d369a375a541dd"
+      },
+      "API_ID": {
+        "description": "app id kmau, didapatkan dari my.telegram.org",
+        "value": "22109811"
+      },
+      "DB_URL": {
+        "description": "dapatkan database kamu di https://cloud.mongodb.com/",
+        "value": "mongodb+srv://neguchixxz:qkh6ljzCMYtk0VSU@neguchi.a5eda.mongodb.net/?retryWrites=true&w=majority&appName=neguchi"
+      },
+      "DB_NAME": {
+        "description": "nama database",
+        "value": "neguchilpm"
+      },
+      "CHANNEL_1": {
+        "description": "channel id, untuk mengirim menfess",
+        "value": "-1002280708688"
+      },
+      "CHANNEL_2": {
+        "description": "grup id, untuk mengcomment dichannel menfess",
+        "value": "-1002310387048"
+      },
+      "CHANNEL_3": {
+        "description": "grup id, untuk mengcomment dichannel menfess",
+        "value": "-1002343600037"
+      },
+      "CHANNEL_TF": {
+        "description": "grup id, untuk log transaksi koin",
+        "value": "-1002497576336"
+      },
+      "CHANNEL_LOG": {
+        "description": "channel log id, untuk melihat log user menfess",
+        "value": "-1002469626001"
+      },
+      "ID_ADMIN": {
+        "description": "ID OWNER BOT MENFESS",
+        "value": "7243811695"
+      },
+      "BATAS_KIRIM": {
+        "description": "Batas kirim menfess perhari",
+        "value": "3"
+      },
+      "BATAS_TALENT": {
+        "description": "Batas top talent",
+        "value": "20"
+      },
+      "BIAYA_KIRIM": {
+        "description": "biaya kirim user menfess",
+        "value": "20"
+      },
+      "BIAYA_TALENT": {
+        "description": "biaya rating user ke talent fwb",
+        "value": "20000"
+      },
+      "HASTAG": {
+        "description": "menambahkan hastag, dipisahkan dengan spasi (#girl wajib diawal dan #boy setelah girl)",
+        "value": "#bzask #bzrandom #bzspill #bzcurhat"
+      },
+      "PIC_BOY": {
+        "description": "gambar fwb boy",
+        "value": "https://t.me/statuslpmtest/2"
+      },
+      "PIC_GIRL": {
+        "description": "gambar fwb girl",
+        "value": "https://t.me/statuslpmtest/1"
+      },
+      "PESAN_JOIN": {
+        "description": "pesan join grup, atau akses ditolak",
+        "value": "Tidak dapat diakses harap join terlebih dahulu"
+      },
+      "START_MSG": {
+        "description": "pesan start pada bot",
+        "value": "Hai {fullname} 🌱\n\nIni adalah bot menfess, semua pesan yang kamu kirim akan masuk ke channel <usernamechmenfess> secara anonymous. ketik /help"
+      },
+      "GAGAL_KIRIM": {
+        "description": "pesan ketika hastag yang diketik tidak sesuai",
+        "value": "{mention}, pesan mu gagal terkirim silahkan gunakan hastag:\n\n#bzask untuk bertanya\n#bzspill untuk memberitahu\n#onscurhat untuk berbagi cerita\n#bzrandom untuk hal random"
+      }
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "eco"
+      }
+    }
+  }
